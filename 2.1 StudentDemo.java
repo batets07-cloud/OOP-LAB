@@ -10,11 +10,10 @@ public class StudentDemo {
         System.out.println("Java Error: Student is abstract; cannot be instantiated");
         // Student sError = new Student("Alice", "101", 2024);
 
-        // Exercise 2.1 - Step 3: Polymorphism and Dynamic Binding
         System.out.println("\n--- Task 2: Testing Polymorphic Assignment & Dynamic Binding ---");
         Student s = new CompSciStudent("Bob", "102", 2024);
         
-        // Setting up sample hours
+        // sample hours
         if (s instanceof CompSciStudent) {
             CompSciStudent csStudent = (CompSciStudent) s;
             csStudent.setMathHours(15);
